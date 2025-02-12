@@ -1,9 +1,10 @@
+#!/bin/bash
 function install_dependency() {
-	sudo apt install clang++ cmake ocl-icd-opencl-dev ocl-icd-dev opencl-headers clinfo libraspberrypi-dev
+        sudo apt install -y build-essential cmake clang llvm llvm-dev libclang-dev libraspberrypi-dev ocl-icd-opencl-dev ocl-icd-dev opencl-headers
 }
 
 function check_dependency() {
-
+        echo "skip check_dependency"
 }
 
 function build() {
